@@ -8,7 +8,7 @@ db = SQLAlchemy()
 class Bird(db.Model):
     """SQL table tracking birds for the Bird-Dex."""
 
-    _data_file = "birddex.csv"
+    _data_file = "/static/birddex.csv"
 
     __tablename__ = "birds"
 
@@ -26,7 +26,21 @@ class Bird(db.Model):
     weight = db.Column(db.String(20))
     wingspan = db.Column(db.String(20))
 
-    # @classmethod
+    @classmethod
+    def from_file(cls):
+        """Create a bird using CSV data."""
+
+        for line in open(cls._data_file):
+            data_name, data_state, data_latin,\ 
+            data_bird_type1, data_bird_type2, data_ability,\
+            data_description, data_image, data_call,\ 
+            data_length, data_weight, data_wingspan = line.strip().split(',')
+            
+            return cls(data_name, data_state, data_latin,\ 
+            data_bird_type1, data_bird_type2, data_ability,\
+            data_description, data_image, data_call,\ 
+            data_length, data_weight, data_wingspan)
+
 
     def __repr__(self):
         return f'<Bird object bird_id: {self.bird_id}, name: {self.name}>'
