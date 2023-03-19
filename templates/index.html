@@ -5,15 +5,15 @@
         <link href="/static/styles.css" rel="stylesheet">
     </head>
     <body>
-        <div class="container" style="max-height: 50%">
+        <div class="container">
             <div class="col-4 offset-4">
-                <div class="overflow-auto">
-                    <div class="row d-flex justify-content-around">
+                <div class="overflow-auto"  style="height:400px">
+                    <div class="row d-flex justify-content-center" style="margin-bottom: 1rem;">
                         <div id="bird-pic">
-                            <img src="/static/img/240px-0144Articuno.png">
+                            <img src="/static/img/Articuno.png" style="width: 75%; height: auto;">
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row" style="margin-bottom: 1rem;">
                         <div id="bird-name">
                             <strong>Articuno</strong>
                         </div>
@@ -21,10 +21,15 @@
                             <i>Flappius snowflakeum</i>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row" style="margin-bottom: 1rem;">
                         <div id="types" class="col-6 d-flex justify-content-around">
-                            <img src="/static/img/Ice_icon_SwSh.png" class="img-fluid">
-                            <img src="/static/img/Flying_icon_SwSh.png" class="img-fluid" >
+                            <div class="icon" id="ice" style="background-color:#75d0c1; border-radius: 100%; height: auto; width: auto; margin: auto;">
+                                <img src="/static/icons/ice.svg" style="height: 60%; width: 60%; margin: 20%;">
+                            </div>
+                            <div class="icon" id="ice" style="background-color:#8faadd; border-radius: 100%; height: auto; width: auto; margin: auto;">
+                                <img src="/static/icons/flying.svg" style="height: 60%; width: 60%; margin: 20%;">
+                            </div>
+                            <!-- <img src="/static/img/Flying_icon_SwSh.png" class="img-fluid" > -->
                         </div>
                         <div id="ability-box" class="col-6">
                             <div id="ability-title">
@@ -35,7 +40,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row" style="margin-bottom: 1rem;">
                         <div id="description">
                             It's said that this Pokémon's beautiful blue wings are made of ice. Articuno flies over snowy mountains, its long tail fluttering along behind it. 
                         </div>
@@ -78,8 +83,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div id="region-map">
+                    <div class="row"style="margin-bottom: 1rem;">
+                        <div id="region-map" style="width:100px">
                             <img src="/static/img/Kanto_Seafoam_Islands.webp">
                         </div>
                     </div>
