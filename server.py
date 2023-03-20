@@ -13,7 +13,12 @@ app.jinja_env.undefined = StrictUndefined
 
 @app.route('/')
 def homepage():
+<<<<<<< HEAD
     """birddex homepage"""
+=======
+    """view homepage"""
+
+>>>>>>> bethany-birds
     return render_template('bird_homepage.html')
 
 if __name__ == "__main__":
