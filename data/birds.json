@@ -1,7 +1,86 @@
 [
     {
         "name": "Articuno",
+        "state": "Kanto",
         "latin_name": "Articuno",
-        "description": "Articuno"
+        "bird_type1": "Flying",
+        "bird_type2": "Ice",
+        "ability": "Snow Cloak",
+        "description": "Articuno",
+        "image": "path.jpg",
+        "call": "sound.mp3",
+        "length": "5'7''",
+        "weight": "122 lbs",
+        "wingspan": "5.3 meters"
+    },
+    {
+        "name": "American Robin",
+        "state": "CT",
+        "latin_name": "Turdus Migratorius",
+        "bird_type1": "",
+        "bird_type2": "",
+        "ability": "flying into windows",
+        "description": "silly goofy",
+        "image": "path.jpg",
+        "call": "sound.mp3",
+        "length": "",
+        "weight": "",
+        "wingspan": ""
+    },
+    {
+        "name": "Greater Roadrunner",
+        "state": "NM",
+        "latin_name": "Geococcyx Californicus",
+        "bird_type1": "Ground",
+        "bird_type2": "",
+        "ability": "",
+        "description": "",
+        "image": "path.jpg",
+        "call": "sound.mp3",
+        "length": "1.7 meters",
+        "weight": "",
+        "wingspan": ""
+    },
+    {
+        "name": "Quail",
+        "state": "CA and WA",
+        "latin_name": "Callipepla Californica",
+        "bird_type1": "ground",
+        "bird_type2": "",
+        "ability": "hiding",
+        "description": "",
+        "image": "path.jpg",
+        "call": "sound.mp3",
+        "length": "25 cm",
+        "weight": "5.6 oz",
+        "wingspan": "13 inches"
+    },
+    {
+        "name": "Wild Turkey",
+        "state": "NE & SE MA",
+        "latin_name": "Meleagris Gallopavo",
+        "bird_type1": "normal",
+        "bird_type2": "",
+        "ability": "color detection",
+        "description": "",
+        "image": "path.jpg",
+        "call": "sound.mp3",
+        "length": "4 ft",
+        "weight": "25 lbs",
+        "wingspan": "5 ft"
+    },
+    {
+        "name": "Cardinal",
+        "state": "E of Rocky Mountains",
+        "latin_name": "Cardinalis Cardinalis",
+        "bird_type1": "Flying",
+        "bird_type2": "Ice",
+        "ability": "sing",
+        "description": "red males, brown females",
+        "image": "path.jpg",
+        "call": "sound.mp3",
+        "length": "9 in",
+        "weight": "2.29 oz",
+        "wingspan": "30 cm"
     }
 ]
