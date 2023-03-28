@@ -52,7 +52,7 @@ class Bird(db.Model):
 
         db.session.add_all(bird_list)
         db.session.commit()
-        return 'birds created!'
+        return print('birds flapping!')
 
 
     def __repr__(self):
