@@ -79,6 +79,4 @@ if __name__ == "__main__":
     # query it executes.
 
     connect_to_db(app)
-    with app.app_context():
-        db.create_all()
-        Bird.from_file()
+
