@@ -31,7 +31,6 @@ class Bird(db.Model):
         """Create a bird using CSV data."""
 
         for line in open(cls._data_file):
-<<<<<<< HEAD
             data_name, data_state, data_latin,\
             data_bird_type1, data_bird_type2, data_ability,\
             data_description, data_image, data_call,\
@@ -41,13 +40,6 @@ class Bird(db.Model):
             data_bird_type1, data_bird_type2, data_ability,\
             data_description, data_image, data_call,\
             data_length, data_weight, data_wingspan)
-=======
-            data_name, data_state, data_latin, data_bird_type1, data_bird_type2, data_ability,\
-            data_description, data_image, data_call, data_length, data_weight, data_wingspan = line.strip().split(',')
-            
-            return cls(data_name, data_state, data_latin, data_bird_type1, data_bird_type2, data_ability,\
-            data_description, data_image, data_call, data_length, data_weight, data_wingspan)
->>>>>>> bethany-birds
 
 
     def __repr__(self):
