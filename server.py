@@ -13,8 +13,10 @@ app.jinja_env.undefined = StrictUndefined
 
 @app.route('/')
 def homepage():
+    """birddex homepage"""
+    return render_template('bird_homepage.html')
 
-    return render_template ('index.html')
+    # return render_template ('index.html')
 
 if __name__ == "__main__":
     connect_to_db(app)
