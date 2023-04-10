@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 function BirdDisplay({birds}) {
   console.log(bird)
-
+  // const bird = birds[0]
   return (
     <div>
       <h1>{bird.name}</h1>
