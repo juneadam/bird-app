@@ -11,6 +11,15 @@ const Card = (props) => {
     )
 }
 
+const Row = (props) => {
+
+    return (
+        <div className="row">
+            
+        </div>
+    )
+}
+
 // ------------ Photo, Noise, and Name components ------------
 
 const BirdPhoto = (props) => {
@@ -117,7 +126,9 @@ const TypeAbilityWrapper = (props) => {
 const Description = (props) => {
     return (
         <div>
-
+            <div id="description">
+                It's said that this Pokémon's beautiful blue wings are made of ice. Articuno flies over snowy mountains, its long tail fluttering along behind it. 
+            </div>
         </div>
     )
 }
