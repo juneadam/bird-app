@@ -14,7 +14,7 @@ app.jinja_env.undefined = StrictUndefined
 def homepage():
     """view homepage"""
 
-    return render_template('bird_homepage.html')
+    return render_template('index.html')
 
 if __name__ == "__main__":
     connect_to_db(app)

@@ -1,15 +1,14 @@
-{
-    "data": 
-    [
+{ 
+    "data": [
         {
             "name": "Articuno",
             "state": "Kanto",
             "latin_name": "Articuno",
-            "bird_type1": "Flying",
-            "bird_type2": "Ice",
+            "bird_type1": "https://pixelmonmod.com/w/images/0/0d/FlyingType.png",
+            "bird_type2": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Pok%C3%A9mon_Ice_Type_Icon.svg/2048px-Pok%C3%A9mon_Ice_Type_Icon.svg.png",
             "ability": "Snow Cloak",
             "description": "this is articunos description",
-            "image": "path.jpg",
+            "image": "https://www.pngkey.com/png/full/230-2302933_articuno-articuno-transparent.png",
             "call": "sound.mp3",
             "length": "5'7''",
             "weight": "122 lbs",
