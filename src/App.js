@@ -1,16 +1,17 @@
 import React, {useEffect, useState} from 'react';
 import axios from 'axios';
-import BirdDisplay from './bird-display.js';
-
+import BirdDisplay from './bird-display';
 
 function App() {
-  const [birds, setBirds] = useState({});
+  const [birds, setBirds] = useState([]);
 
   useEffect(() => {
     const fetchBirds = async () => {
       try {
         const response = await axios.get('/birds.json');
-        setBirds(response.data);
+        setBirds(response.data.data);
+        console.log('Response data: ', response.data);
+        console.log('birds: ', birds);
       } catch (error) {
         console.error('Error fetching birds:', error);
       }
@@ -19,31 +20,30 @@ function App() {
     fetchBirds();
   }, []);
 
-console.log(birds)
-
+  console.log('rendering app with birds: ', birds); 
+  
   return (
     <div>
       <h1>Birds Information</h1>
-      <h1>bethany is learning</h1>
-      <BirdDisplay birds={birds} />
+      {birds.length > 0 ? (
+        <BirdDisplay birds={birds} />
+      ) : (
+        <p>Loading...</p>
+      )}
     </div>
   );
-};
+}
 
 export default App;
 
-// import {useEffect, useState} from 'react';
-// import birdsData from './data/birds.json';
 
-  // useEffect(() => {
-  //   fetch('/birds')
-  //     .then(response => response.json())
-  //     .then(data => setBird(data[0]));
-  // }, []);
-
-
-
-  
-  // if (!bird) {
-  //   return <div>more bird info to come</div>;
-  // }
+// import birds from './birds.json';
+// return (
+//   <div>
+//     <h1>Birds Information</h1>
+//     <h1>bethany is learning</h1>
+//     <BirdDisplay bird={currentBird} />
+//     <button onClick={handleNextBird}> next bird </button>
+//   </div>
+// );
+// };

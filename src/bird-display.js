@@ -5,8 +5,9 @@ function BirdDisplay({birds}) {
   const currentBird = birds[currentBirdIndex];
 
   const handleNextBird = () => {
-    setCurrentBirdIndex(currentBirdIndex === birds.length - 1 ? 0 : currentBirdIndex + 1);
+    setCurrentBirdIndex((currentBirdIndex + 1) % birds.length);
   };
+  
 
   return (
     <div>
