@@ -15,7 +15,13 @@ function BirdDisplay({birds}) {
         <div>
           <h1>{currentBird.name}</h1>
           <img src={currentBird.image} alt={currentBird.name} />
+          <img src={currentBird.bird_type1} />
           <p>{currentBird.description}</p>
+          <p>{currentBird.state}</p>
+          <p>{currentBird.ability}</p>
+          <p>{currentBird.weight}</p>
+          <p>{currentBird.length_}</p>
+          <p>{currentBird.wingspan}</p>
           <button onClick={handleNextBird}>Next</button>
         </div>
       ) : (
