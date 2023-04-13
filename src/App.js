@@ -10,8 +10,10 @@ function App() {
       try {
         const response = await axios.get('/birds.json');
         setBirds(response.data.data);
+
         console.log('Response data: ', response.data);
         console.log('birds: ', birds);
+
       } catch (error) {
         console.error('Error fetching birds:', error);
       }
@@ -35,15 +37,3 @@ function App() {
 }
 
 export default App;
-
-
-// import birds from './birds.json';
-// return (
-//   <div>
-//     <h1>Birds Information</h1>
-//     <h1>bethany is learning</h1>
-//     <BirdDisplay bird={currentBird} />
-//     <button onClick={handleNextBird}> next bird </button>
-//   </div>
-// );
-// };
