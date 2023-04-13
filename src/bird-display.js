@@ -8,7 +8,6 @@ function BirdDisplay({birds}) {
     setCurrentBirdIndex((currentBirdIndex + 1) % birds.length);
   };
   
-
   return (
     <div>
       {currentBird ? (
