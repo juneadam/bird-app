@@ -1,0 +1,35 @@
+body {
+    background-color: rgb(204, 240, 228);
+    justify-content: center;
+    align-items: center;
+    display:flex;
+}
+
+.bird-image {
+    width: 275px;
+    height: 275px;
+    margin: 0 10px;  
+}
+
+.image-wrapper {
+    text-align: center;
+    border: 2px solid black;
+    padding: 50px;
+    width:fit-content;
+}
+
+.type-icon-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.type-icon {
+    width: 70px;
+    height: 70px;
+    margin: 0 10px;
+  }  
+
+.bird-name {
+    color:rgb(40, 128, 102);
+}

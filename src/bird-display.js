@@ -12,9 +12,14 @@ function BirdDisplay({birds}) {
     <div>
       {currentBird ? (
         <div>
-          <h1>{currentBird.name}</h1>
-          <img src={currentBird.image} alt={currentBird.name} />
-          <img src={currentBird.bird_type1} />
+        <div className="image-wrapper">
+          <h1 className="bird-name">{currentBird.name}</h1>
+            <img src={currentBird.image} alt={currentBird.name} className="bird-image" />
+              <div className="type-icon-container">
+                <img src={currentBird.bird_type1} className="type-icon" />
+                <img src={currentBird.bird_type2} className="type-icon" />
+              </div>
+        </div>
           <p>{currentBird.description}</p>
           <p>{currentBird.state}</p>
           <p>{currentBird.ability}</p>
@@ -24,7 +29,7 @@ function BirdDisplay({birds}) {
           <button onClick={handleNextBird}>Next</button>
         </div>
       ) : (
-        <p>Loading...</p>
+        <p className="loading-message">more birds to come</p>
       )}
     </div>
   );
