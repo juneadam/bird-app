@@ -1,11 +1,10 @@
 # Flask routing for bird-dex app
 
 from flask import Flask, render_template, request, flash, session, redirect, jsonify
-# from passlib.hash import argon2
+
 from jinja2 import StrictUndefined
-# from random import choice, randint, shuffle
-from model import connect_to_db, db
-# import crud
+
+from model import Bird, connect_to_db, db
 
 app = Flask(__name__)
 app.secret_key = 'dev'
@@ -50,6 +49,10 @@ def bird_request():
 
     return bird_data2
 
+<<<<<<< HEAD
+=======
+    return render_template('index.html')
+>>>>>>> eeccc31b1570e208559c66846b3c11cfefeca8be
 
 if __name__ == "__main__":
     connect_to_db(app)
