@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import './bird-display.css';
+import TypeIconContainer from './headercomponents/type-icon-container'
 
 
 function BirdDisplay({ birds }) {
@@ -22,10 +23,7 @@ function BirdDisplay({ birds }) {
                 alt={currentBird.name}
                 className="bird-image"
               />
-              <div className="type-icon-container">
-                <img src={currentBird.bird_type1} className="type-icon" />
-                <img src={currentBird.bird_type2} className="type-icon" />
-              </div>
+              <TypeIconContainer bird_type1={currentBird.bird_type1} bird_type2={currentBird.bird_type2}/>
             </div>
             <p>{currentBird.description}</p>
             <p>{currentBird.state}</p>
