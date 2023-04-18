@@ -49,10 +49,7 @@ def bird_request():
 
     return bird_data2
 
-<<<<<<< HEAD
-=======
-    return render_template('index.html')
->>>>>>> eeccc31b1570e208559c66846b3c11cfefeca8be
+    # return render_template('index.html')
 
 if __name__ == "__main__":
     connect_to_db(app)
