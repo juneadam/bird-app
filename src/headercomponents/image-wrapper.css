@@ -1,0 +1,8 @@
+/* CSS for image-wrapper component */
+
+.image-wrapper {
+    text-align: center;
+    border: 2px solid black;
+    padding: 0px 50px 50px 50px;
+    width:fit-content;
+}

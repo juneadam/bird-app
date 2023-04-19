@@ -8,22 +8,5 @@ body {
 #overflow-wrapper {
     overflow:scroll;
     height: 400px;
-    width: 400px;
-}
-
-.bird-image {
-    width: 275px;
-    height: auto;
-    margin: 0 10px;  
-}
-
-.image-wrapper {
-    text-align: center;
-    border: 2px solid black;
-    padding: 0px 50px 50px 50px;
-    width:fit-content;
-}
-
-.bird-name {
-    color:rgb(40, 128, 102);
+    width: 420px;
 }

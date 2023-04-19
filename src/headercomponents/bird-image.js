@@ -1,5 +1,7 @@
 // module for displaying bird image from JSON
 
+import './bird-image.css';
+
 const BirdImage = (props) => {
     let image = props.image
     let name = props.name

@@ -1,5 +1,7 @@
 // module for displaying bird name data from JSON file
 
+import './bird-name.css';
+
 const BirdName = (props) => {
     let name = props.name
 

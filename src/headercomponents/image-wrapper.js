@@ -1,5 +1,7 @@
 // wrapper containing components for name, photo, and typing(s) of each bird in the dex
 
+import './image-wrapper.css';
+
 import TypeIconContainer from './type-icon-container'
 import BirdName from "./bird-name";
 import BirdImage from "./bird-image";
