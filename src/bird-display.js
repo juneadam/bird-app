@@ -19,16 +19,19 @@ function BirdDisplay({ birds }) {
               <ImageWrapper
                 name={currentBird.name}
                 image={currentBird.image}
+                call={currentBird.call}
                 bird_type1={currentBird.bird_type1}
                 bird_type2={currentBird.bird_type2}
               />
+              <div id="description-wrapper">
+                <p>{currentBird.description}</p>
+                <p>{currentBird.state}</p>
+                <p>{currentBird.ability}</p>
+                <p>{currentBird.weight}</p>
+                <p>{currentBird.length_}</p>
+                <p>{currentBird.wingspan}</p>
+              </div>
             </div>
-            <p>{currentBird.description}</p>
-            <p>{currentBird.state}</p>
-            <p>{currentBird.ability}</p>
-            <p>{currentBird.weight}</p>
-            <p>{currentBird.length_}</p>
-            <p>{currentBird.wingspan}</p>
           </div>
           <div>
             <button onClick={handleNextBird}>Next</button>
