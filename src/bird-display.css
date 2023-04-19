@@ -24,18 +24,6 @@ body {
     width:fit-content;
 }
 
-.type-icon-container {
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-}
-
-.type-icon {
-    width: 70px;
-    height: 70px;
-    margin: 0 10px;
-  }  
-
 .bird-name {
     color:rgb(40, 128, 102);
 }

@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
-import './bird-display.css';
-import TypeIconContainer from './headercomponents/type-icon-container'
-
+import "./bird-display.css";
+import ImageWrapper from "./headercomponents/image-wrapper";
 
 function BirdDisplay({ birds }) {
   const [currentBirdIndex, setCurrentBirdIndex] = useState(0);
@@ -14,16 +13,15 @@ function BirdDisplay({ birds }) {
   return (
     <React.Fragment>
       {currentBird ? (
-        <div id="current-bird">
-          <div id="overflow-wrapper">
-            <div className="image-wrapper">
-              <h1 className="bird-name">{currentBird.name}</h1>
-              <img
-                src={currentBird.image}
-                alt={currentBird.name}
-                className="bird-image"
+        <React.Fragment>
+          <div id="current-bird">
+            <div id="overflow-wrapper">
+              <ImageWrapper
+                name={currentBird.name}
+                image={currentBird.image}
+                bird_type1={currentBird.bird_type1}
+                bird_type2={currentBird.bird_type2}
               />
-              <TypeIconContainer bird_type1={currentBird.bird_type1} bird_type2={currentBird.bird_type2}/>
             </div>
             <p>{currentBird.description}</p>
             <p>{currentBird.state}</p>
@@ -35,7 +33,7 @@ function BirdDisplay({ birds }) {
           <div>
             <button onClick={handleNextBird}>Next</button>
           </div>
-        </div>
+        </React.Fragment>
       ) : (
         <p className="loading-message">more birds to come</p>
       )}
