@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./bird-display.css";
 import ImageWrapper from "./headercomponents/image-wrapper";
+import DescriptionWrapper from "./descriptioncomponents/description-wrapper";
 
 function BirdDisplay({ birds }) {
   const [currentBirdIndex, setCurrentBirdIndex] = useState(0);
@@ -22,6 +23,15 @@ function BirdDisplay({ birds }) {
                 call={currentBird.call}
                 bird_type1={currentBird.bird_type1}
                 bird_type2={currentBird.bird_type2}
+              />
+              <DescriptionWrapper
+                description={currentBird.description}
+                state={currentBird.state}
+                ability_name={currentBird.ability_name}
+                ability_text={currentBird.ability_text}
+                weight={currentBird.weight}
+                height={currentBird.height}
+                wingspan={currentBird.wingspan}
               />
               <div id="description-wrapper">
                 <p>{currentBird.description}</p>
