@@ -1,0 +1,14 @@
+
+
+.deets-card {
+    border-style: solid;
+    border-color: black;
+    border-width: 0px;
+    border-radius: 5%;
+    padding: 5px;
+    margin: 5px;
+}
+
+.deets-card:hover {
+    box-shadow: 2px 2px 5px rgb(0,0,0,0.3);
+}

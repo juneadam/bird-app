@@ -1,0 +1,5 @@
+/* CSS module for DeetsWrapper React component */
+
+#deets-wrapper {
+    display: flex;
+}
