@@ -26,7 +26,7 @@ function App() {
   
   return (
     <div>
-      <h1>bee-bop-bird-dex</h1>
+      {/* <h1>bee-bop-bird-dex</h1> */}
       {birds.length > 0 ? (
         <BirdDisplay birds={birds} />
       ) : (

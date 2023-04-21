@@ -1,41 +1,45 @@
-body {
+* {
+    box-sizing: border-box;
+  }
+
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+    border: 1px solid black;
+    background-color: red;
+  }
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+#root-wrapper {
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+    width:50%;
+    background-color: transparent;
+}
+
+/* body {
     background-color: rgb(204, 240, 228);
     justify-content: center;
     align-items: center;
     display:flex;
-}
-
-#overflow-wrapper {
-    overflow:scroll;
-    height: 400px;
-    width: 400px;
-}
-
-.bird-image {
-    width: 275px;
-    height: auto;
-    margin: 0 10px;  
-}
-
-.image-wrapper {
-    text-align: center;
-    border: 2px solid black;
-    padding: 0px 50px 50px 50px;
-    width:fit-content;
-}
-
-.type-icon-container {
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-}
-
-.type-icon {
-    width: 70px;
-    height: 70px;
-    margin: 0 10px;
-  }  
-
-.bird-name {
-    color:rgb(40, 128, 102);
-}
+} */

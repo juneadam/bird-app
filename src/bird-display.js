@@ -30,7 +30,7 @@ function BirdDisplay({ birds }) {
                 ability_name={currentBird.ability_name}
                 ability_text={currentBird.ability_text}
                 weight={currentBird.weight}
-                height={currentBird.height}
+                length={currentBird.length_}
                 wingspan={currentBird.wingspan}
               />
               <div id="description-wrapper">
