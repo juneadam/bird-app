@@ -16,8 +16,6 @@ def homepage():
     return render_template('birddex.html')
 
     # return render_template ('index.html')
-<<<<<<< HEAD
-=======
 
 @app.route('/bird-request.json', methods=['GET'])
 def bird_request():
@@ -52,7 +50,6 @@ def bird_request():
     return bird_data2
 
     # return render_template('index.html')
->>>>>>> d0a61eab31bd90ad89a1093f56e61e9e87758222
 
 if __name__ == "__main__":
     connect_to_db(app)
