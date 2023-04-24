@@ -1,0 +1,37 @@
+.row {
+    margin-bottom: 1rem;
+}
+
+#overflow-wrapper {
+    overflow:scroll;
+    height: 400px;
+    width: 400px;
+}
+
+#type-ability-wrapper {
+    margin-bottom: 1rem;
+}
+
+#bird-pic img {
+    width: 250px; 
+    height: auto
+}
+
+.icon {
+    background-color:#8faadd; 
+    border-radius: 100%; 
+    height: auto; 
+    width: auto; 
+    margin: auto;
+}
+
+.icon img {
+    height: 60%; 
+    width: 60%; 
+    margin: 20%;
+}
+
+#region-map img {
+    width:100px;
+    margin-bottom: 1rem;
+}
