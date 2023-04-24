@@ -5,16 +5,22 @@ body {
     display:flex;
 }
 
+#overflow-wrapper {
+    overflow:scroll;
+    height: 400px;
+    width: 400px;
+}
+
 .bird-image {
     width: 275px;
-    height: 275px;
+    height: auto;
     margin: 0 10px;  
 }
 
 .image-wrapper {
     text-align: center;
     border: 2px solid black;
-    padding: 50px;
+    padding: 0px 50px 50px 50px;
     width:fit-content;
 }
 

@@ -2,28 +2,29 @@
 
 // ------------ Utility Components ------------
 
-const Card = (props) => {
+// const Card = (props) => {
 
-    return (
-        <div className="card">
+//     return (
+//         <div className="card">
 
-        </div>
-    )
-}
+//         </div>
+//     )
+// }
 
-const Row = (props) => {
+// const Row = (props) => {
 
-    return (
-        <div className="row">
+//     return (
+//         <div className="row">
             
-        </div>
-    )
-}
+//         </div>
+//     )
+// }
 
 // ------------ Photo, Noise, and Name components ------------
 
 const BirdPhoto = (props) => {
     let imgSrc = props.ImgSrc;
+    console.log(imgSrc)
     return (
         <div id="bird-pic">
             <img src={imgSrc}/>
@@ -32,12 +33,13 @@ const BirdPhoto = (props) => {
 }
 
 const BirdNoise = (props) => {
+    let call = props.call
 
     return (
         <div id="bird-noise">
             <audio controls autoPlay muted>
-            <source src="horse.ogg" type="audio/ogg" />
-            <source src="horse.mp3" type="audio/mpeg" />
+            <source src={call} type="audio/ogg" />
+            {/* <source src="horse.mp3" type="audio/mpeg" /> */}
             Your browser does not support the audio element.
             </audio>
         </div>
@@ -45,14 +47,16 @@ const BirdNoise = (props) => {
 }
 
 const BirdNames = (props) => {
+    let name = props.birdName
+    let latin = props.birdLatin
 
     return (
         <div id="bird-names-component">
             <div id="bird-name">
-                <strong>Articuno</strong>
+                <strong>{name}</strong>
             </div>
             <div id="latin">
-                <i>Flappius snowflakeum</i>
+                <i>{latin}</i>
             </div>
         </div>
     )
@@ -61,29 +65,33 @@ const BirdNames = (props) => {
 // ------------ Ability and Type components/wrappers ------------
 
 const Type1 = (props) => {
+    let BirdType1 = props.typesWrapperBirdType1
 
     return (
-        <div className="icon" id="ice">
-            <img src="/static/icons/ice.svg" />
+        <div className="icon" id={BirdType1}>
+            <img src={"/static/icons/" + BirdType1 + ".svg"} />
         </div>
     )
 }
 
 const Type2 = (props) => {
+    let BirdType2 = props.typesWrapperBirdType2
 
     return (
-        <div className="icon" id="flying">
-            <img src="/static/icons/flying.svg" />
+        <div className="icon" id={BirdType2}>
+            <img src={"/static/icons/" + BirdType2 +".svg"} />
         </div>
     )
 }
 
 const TypesWrapper = (props) => {
+    let typesWrapperBirdType1 = props.type1
+    let typesWrapperBirdType2 = props.type2
 
     return (
         <div id="types">
-            <Type1 />
-            <Type2 />
+            <Type1 typesWrapperBirdType1={typesWrapperBirdType1} />
+            <Type2 typesWrapperBirdType2={typesWrapperBirdType2} />
         </div>
     )
 }
@@ -112,11 +120,14 @@ const AbilityWrapper = (props) => {
 }
 
 const TypeAbilityWrapper = (props) => {
+    let wrapperBirdType1 = props.bird_type1
+    let wrapperBirdType2 = props.bird_type2
+    let wrapperAbility = props.ability
 
     return (
         <div id="type-ability-wrapper">
-            <TypesWrapper />
-            <AbilityWrapper />
+            <TypesWrapper type1={wrapperBirdType1} type2={wrapperBirdType2}/>
+            <AbilityWrapper  />
         </div>
     )
 }
@@ -124,69 +135,78 @@ const TypeAbilityWrapper = (props) => {
 // ------------ Description components ------------
 
 const Description = (props) => {
+    let description = props.description
+
     return (
         <div>
             <div id="description">
-                It's said that this Pokémon's beautiful blue wings are made of ice. Articuno flies over snowy mountains, its long tail fluttering along behind it. 
+                {description} 
             </div>
         </div>
     )
 }
 
 const Height = (props) => {
+    let height=props.height
 
     return (
-        // <Card>
+        <div className="card">
             <div id="height">
                 <div className="card-header">
                     Height
                 </div>
                 <ul>
-                    <li>1.7 m</li>
+                    <li>{height}</li>
                 </ul>
             </div>
-        // </Card>
+        </div>
     )
 }
 
 const Weight = (props) => {
+    let weight = props.weight
 
     return (
-        // <Card>
+        <div className="card">
             <div id="weight">
                 <div className="card-header">
                     Weight
                 </div>
                 <ul>
-                    <li>55.4 kg</li>
+                    <li>{weight}</li>
                 </ul>
             </div>
-        // </Card>
+        </div>
     )
 }
 
 const Wingspan = (props) => {
+    let wingspan = props.wingspan
 
-    return (
-        // <Card>                         
+    return (              
+        <div className="card">        
             <div id="wingspan">
                 <div className="card-header">
                     Wingspan
                 </div>
                 <ul>
-                    <li>5.3 m</li>
+                    <li>{wingspan}</li>
                 </ul>
             </div>
-        // </Card>
+        </div> 
     )
 }
 
 const DeetsWrapper = (props) => {
+    let deetsWrapperHeight = props.deetsWrapperHeight
+    let deetsWrapperWeight = props.deetsWrapperWeight
+    let deetsWrapperWingspan = props.deetsWrapperWingspan
+
     return (
         <div id="deets-wrapper">
-            <Height />
-            <Weight />
-            <Wingspan />
+            <Height height={deetsWrapperHeight} />
+            <Weight weight={deetsWrapperWeight} />
+            <Wingspan wingspan={deetsWrapperWingspan} />
         </div>
     )
 }
@@ -205,16 +225,16 @@ const RegionMap = (props) => {
 // ------------ App and Overflow components ------------
 
 const OverflowWrapper = (props) => {
-    let wrapperImgSrc = props.wrapperImgSrc;
+    let overflowWrapperBirdDeets = props.overflowWrapperBirdDeets;
 
     return (
     <div id="overflow-wrapper">
-        <BirdPhoto ImgSrc={wrapperImgSrc} />
-        <BirdNames />
-        <BirdNoise />
-        <TypeAbilityWrapper />
-        <Description />
-        <DeetsWrapper />
+        <BirdPhoto ImgSrc={overflowWrapperBirdDeets["image"]} />
+        <BirdNames birdName={overflowWrapperBirdDeets["name"]} birdLatin={overflowWrapperBirdDeets["latin"]} />
+        <BirdNoise call={overflowWrapperBirdDeets["call"]} />
+        <TypeAbilityWrapper bird_type1={overflowWrapperBirdDeets["bird_type1"]} bird_type2={overflowWrapperBirdDeets["bird_type2"]} ability={overflowWrapperBirdDeets["ability"]} />
+        <Description description={overflowWrapperBirdDeets["description"]} />
+        <DeetsWrapper deetsWrapperHeight={overflowWrapperBirdDeets["height"]} deetsWrapperWeight={overflowWrapperBirdDeets["weight"]} deetsWrapperWingspan={overflowWrapperBirdDeets["wingspan"]}/>
         <RegionMap />
     </div>
     )
@@ -222,11 +242,26 @@ const OverflowWrapper = (props) => {
 
 
 const App = () => {
+
+    const [birdDeets, setBirdDeets] = React.useState({})
+
+    const fetchBirdDeets = () => {
+        fetch('/bird-request.json')
+        .then((response) => response.json())
+        .then((newBirdDeets) => {
+            setBirdDeets(newBirdDeets);
+        })
+    };
+
+    React.useEffect(fetchBirdDeets, [])
     
     return (
         <div>
             <h2>Hello, Bird.</h2>
-            <OverflowWrapper wrapperImgSrc="/static/img/Articuno.png" />
+            <OverflowWrapper overflowWrapperBirdDeets={birdDeets} />
+            <button type="button" id="new_bird">
+                New Bird
+            </button>
         </div>
     );
 }
