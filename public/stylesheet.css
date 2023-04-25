@@ -11,6 +11,14 @@ body {
     width: 400px;
 }
 
+#current-bird {
+    position: relative;
+}
+
+#description-wrapper {
+    background-color: rgb(8, 205, 136);
+}
+
 .bird-image {
     width: 275px;
     height: auto;
@@ -39,3 +47,59 @@ body {
 .bird-name {
     color:rgb(40, 128, 102);
 }
+
+#bird-display-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.button-container {
+    width: 200px;
+    height: 200px;
+    position: relative;
+  }
+  
+  .previous-button, .next-button {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background-image: url('https://static.thenounproject.com/png/2879647-200.png');
+  }
+  
+  .previous-button {
+    left: 0;
+    background-position: 0 0;
+  }
+  
+  .next-button {
+    right: 0;
+    background-position: 100% 0;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

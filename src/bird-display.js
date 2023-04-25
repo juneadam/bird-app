@@ -11,8 +11,23 @@ function BirdDisplay({ birds }) {
     setCurrentBirdIndex((currentBirdIndex + 1) % birds.length);
   };
 
+  const handlePreviousBird = () => {
+    setCurrentBirdIndex((currentBirdIndex - 1 + birds.length) % birds.length);
+  };
+
+  // const handleArrowClick = (event) => {
+  //   const { offsetX, target } = event.nativeEvent;
+  //   const { width } = target.getBoundingClientRect();
+  //   if (offsetX <= width / 2) {
+  //     handlePreviousBird();
+  //   } else {
+  //     handleNextBird();
+  //   }
+  // };
+  
   return (
     <React.Fragment>
+      <div id="bird-display-container">
       {currentBird ? (
         <React.Fragment>
           <div id="current-bird">
@@ -20,7 +35,7 @@ function BirdDisplay({ birds }) {
               <ImageWrapper
                 name={currentBird.name}
                 image={currentBird.image}
-                call={currentBird.call}
+                // call={currentBird.call}
                 bird_type1={currentBird.bird_type1}
                 bird_type2={currentBird.bird_type2}
               />
@@ -44,12 +59,20 @@ function BirdDisplay({ birds }) {
             </div>
           </div>
           <div>
-            <button onClick={handleNextBird}>Next</button>
+          <div className="button-container">
+              <button className="arrow-button previous-button" onClick={handlePreviousBird}>
+                <img src="arrow.png" alt="previous" />
+              </button>
+              <button className="arrow-button next-button" onClick={handleNextBird}>
+                <img src="arrow.png" alt="next" />
+              </button>
+            </div>
           </div>
         </React.Fragment>
       ) : (
         <p className="loading-message">more birds to come</p>
       )}
+      </div>
     </React.Fragment>
   );
 }

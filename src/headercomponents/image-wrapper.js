@@ -12,13 +12,13 @@ const ImageWrapper = (props) => {
     let image = props.image
     let bird_type1 = props.bird_type1
     let bird_type2 = props.bird_type2
-    let call = props.call
+    // let call = props.call
 
     return (
         <div className="image-wrapper">
         <BirdName name={name} />
         <BirdImage image={image} name={image} />
-        <BirdCall call={call} />
+        {/* <BirdCall call={call} /> */}
         <TypeIconContainer bird_type1={bird_type1} bird_type2={bird_type2}/>
       </div>
     )
