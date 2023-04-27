@@ -13,4 +13,4 @@ const TypeIconContainer = (props) => {
   );
 };
 
-export default TypeIconContainer
+export default TypeIconContainer;

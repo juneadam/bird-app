@@ -24,4 +24,4 @@ const ImageWrapper = (props) => {
     )
 }
 
-export default ImageWrapper
+export default ImageWrapper;
