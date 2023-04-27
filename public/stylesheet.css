@@ -74,11 +74,11 @@ body {
 }
 
 .next-button:hover {
-    box-shadow: 5px 5px 5px black;
+    box-shadow: 5px 0px 5px rgb(161, 220, 209);
 }
 
 .previous-button:hover {
-    box-shadow: -5px 5px 5px black;
+    box-shadow: -5px 0px 5px rgb(161, 220, 209);
 } 
   
 .previous-button {
