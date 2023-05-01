@@ -2,6 +2,19 @@
     box-sizing: border-box;
   }
 
+  body {
+    padding-top: 60px;
+    background-image: url("https://pbs.twimg.com/media/EC6sQO_UYAIt1Zz?format=png&name=medium");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+  }
+
+
+  /* https://mcdn.wallpapersafari.com/medium/43/97/vt85Jw.png
+  
+  
+  */
   .col-1 {width: 8.33%;}
   .col-2 {width: 16.66%;}
   .col-3 {width: 25%;}
@@ -14,8 +27,6 @@
   .col-10 {width: 83.33%;}
   .col-11 {width: 91.66%;}
   .col-12 {width: 100%;}
-
-
 
 [class*="col-"] {
     float: left;
@@ -33,15 +44,12 @@
 #root-wrapper {
     justify-content: center;
     align-items: center;
-    padding: 0px;
+    padding: 10px;
     margin: 0px;
-    width:50%;
-    background-color: transparent;
+    width: 50%;
+    background-color: gray;
 }
  */
-
-
-
 
 body {
     background-color: rgb(204, 240, 228);
@@ -61,7 +69,7 @@ body {
 }
 
 #description-wrapper {
-    background-color: rgb(8, 205, 136);
+    background-color: rgb(166, 173, 171);
 }
 
 .bird-image {
@@ -97,7 +105,11 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    /* background-color: rgb(163, 166, 172); */
 }
+
+
+/* ------------------------------------------------------ */
 
 
 .button-container {
@@ -137,7 +149,7 @@ body {
 }
   
 
-
+   
 
 
 

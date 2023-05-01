@@ -1,12 +1,6 @@
-/* body {
-    background-color: rgb(204, 240, 228);
-    justify-content: center;
-    align-items: center;
-    display:flex;
-} */
-
 #overflow-wrapper {
     overflow:scroll;
     height: 400px;
     width: 420px;
+    background-color: rgb(215, 211, 216);
 }
