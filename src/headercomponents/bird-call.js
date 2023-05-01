@@ -14,4 +14,4 @@ const BirdCall = (props) => {
     )
 }
 
-export default BirdCall
+export default BirdCall;
