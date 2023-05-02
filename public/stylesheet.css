@@ -10,11 +10,6 @@
     height: 100vh;
   }
 
-
-  /* https://mcdn.wallpapersafari.com/medium/43/97/vt85Jw.png
-  
-  
-  */
   .col-1 {width: 8.33%;}
   .col-2 {width: 16.66%;}
   .col-3 {width: 25%;}
@@ -51,12 +46,13 @@
 }
  */
 
-body {
+ 
+/* body {
     background-color: rgb(204, 240, 228);
     justify-content: center;
     align-items: center;
     display:flex;
-}
+} */
 
 #overflow-wrapper {
     overflow:scroll;
@@ -70,35 +66,6 @@ body {
 
 #description-wrapper {
     background-color: rgb(166, 173, 171);
-}
-
-.bird-image {
-    width: 275px;
-    height: auto;
-    margin: 0 10px;  
-}
-
-.image-wrapper {
-    text-align: center;
-    border: 2px solid black;
-    padding: 0px 50px 50px 50px;
-    width:fit-content;
-}
-
-.type-icon-container {
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-}
-
-.type-icon {
-    width: 70px;
-    height: 70px;
-    margin: 0 10px;
-  }  
-
-.bird-name {
-    color:rgb(40, 128, 102);
 }
 
 #bird-display-container {
@@ -131,11 +98,11 @@ body {
 }
 
 .next-button:hover {
-    box-shadow: 5px 0px 5px rgb(161, 220, 209);
+    box-shadow: 5px 0px 5px rgb(133, 133, 133);
 }
 
 .previous-button:hover {
-    box-shadow: -5px 0px 5px rgb(161, 220, 209);
+    box-shadow: -5px 0px 5px rgb(133, 133, 133);
 } 
   
 .previous-button {
