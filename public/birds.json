@@ -26,9 +26,9 @@
             "description": "a small, plump bird with a black beak, brown back, white belly, and red breast",
             "image": "https://www.pngmart.com/files/6/American-Robin-Transparent-PNG.png",
             "call": "sound.mp3",
-            "length_": "",
-            "weight": "",
-            "wingspan": ""
+            "length_": "small",
+            "weight": "small",
+            "wingspan": "small"
         },
         {
             "name": "Greater Roadrunner",
