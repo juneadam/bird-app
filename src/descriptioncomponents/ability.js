@@ -1,6 +1,8 @@
 // React component for ability data from JSON file for bird dex
 
 import React from "react";
+import "./description-wrapper.css";
+
 
 const Ability = (props) => {
 

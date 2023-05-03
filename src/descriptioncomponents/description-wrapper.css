@@ -1,7 +1,9 @@
-/* CSS for desciption wrapper component */
+/* styling for box around entire description component */
 
 #description-wrapper {
     border: 2px solid black;
     padding: 0px 50px 50px 50px;
     width:fit-content;
+    background-color:rgb(195, 130, 238)
 }
+

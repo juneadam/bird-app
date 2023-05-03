@@ -9,8 +9,8 @@ import "./description-wrapper.css";
 
 const DescriptionWrapper = (props) => {
   let deetsObj = {
-    "length": props.length,
-    "weight": props.length,
+    "long": props.long,
+    "weight": props.weight,
     "wingspan": props.wingspan
   }
 

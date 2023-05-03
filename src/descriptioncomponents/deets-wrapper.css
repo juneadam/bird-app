@@ -1,6 +1,8 @@
-/* CSS for DeetsWraper */
+/* styling for box around bird size */
 
 #deets-wrapper {
     display: flex;
     background-color: aquamarine;
+    border-radius: 15%;
+    text-align: center;
 }

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "./bird-display.css";
 import ImageWrapper from "./headercomponents/image-wrapper";
 import DescriptionWrapper from "./descriptioncomponents/description-wrapper";
@@ -25,7 +25,7 @@ function BirdDisplay({ birds }) {
                 <ImageWrapper
                   name={currentBird.name}
                   image={currentBird.image}
-                  call={currentBird.call}
+                  // call={currentBird.call}
                   bird_type1={currentBird.bird_type1}
                   bird_type2={currentBird.bird_type2}
                 />
@@ -35,7 +35,7 @@ function BirdDisplay({ birds }) {
                   ability_name={currentBird.ability_name}
                   ability_text={currentBird.ability_text}
                   weight={currentBird.weight}
-                  height={currentBird.height}
+                  long={currentBird.long}
                   wingspan={currentBird.wingspan}
                 />
               </div>

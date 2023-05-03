@@ -5,7 +5,7 @@ import './image-wrapper.css';
 import TypeIconContainer from './type-icon-container'
 import BirdName from "./bird-name";
 import BirdImage from "./bird-image";
-import BirdCall from './bird-call';
+// import BirdCall from './bird-call';
 
 const ImageWrapper = (props) => {
     let name = props.name

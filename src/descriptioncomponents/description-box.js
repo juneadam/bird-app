@@ -1,4 +1,5 @@
 // module for React component containing description info for bird dex
+import "./description-box.css";
 
 const DescriptionBox = (props) => {
   return (
