@@ -3,6 +3,7 @@ import "./bird-display.css";
 import ImageWrapper from "./headercomponents/image-wrapper";
 import DescriptionWrapper from "./descriptioncomponents/description-wrapper";
 
+
 function BirdDisplay({ birds }) {
   const [currentBirdIndex, setCurrentBirdIndex] = useState(0);
   const currentBird = birds[currentBirdIndex];
