@@ -1,4 +1,7 @@
-#ability-title,
-#ability-text {
+.ability-title {
   text-align: center;
+}
+
+.ability-description {
+  color: black;
 }

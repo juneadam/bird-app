@@ -2,7 +2,8 @@
 
 #deets-wrapper {
     display: flex;
-    background-color: aquamarine;
-    border-radius: 15%;
+    /* background-color: rgba(127, 255, 212, 0.263); */
+    border-radius: 25%;
     text-align: center;
+    border: 1px solid black;
 }

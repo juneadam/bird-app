@@ -3,7 +3,7 @@
 const State = (props) => {
     return (
         <div id="state">
-            {props.state}
+            Region: <strong>{props.state}</strong>
         </div>
     )
 }
