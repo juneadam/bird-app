@@ -25,7 +25,7 @@ function BirdDisplay({ birds }) {
                 <ImageWrapper
                   name={currentBird.name}
                   image={currentBird.image}
-                  // call={currentBird.call}
+                  call={currentBird.call}
                   bird_type1={currentBird.bird_type1}
                   bird_type2={currentBird.bird_type2}
                 />
