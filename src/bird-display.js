@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "./bird-display.css";
 import ImageWrapper from "./headercomponents/image-wrapper";
 import DescriptionWrapper from "./descriptioncomponents/description-wrapper";

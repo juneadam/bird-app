@@ -2,7 +2,9 @@
 
 .image-wrapper {
     text-align: center;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     padding: 0px 50px 50px 50px;
     width:fit-content;
+    background-color: #C9FFFF;
+    box-shadow: -2px 4px 5px #85a8ac inset;
 }
