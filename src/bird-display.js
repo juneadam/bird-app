@@ -33,14 +33,6 @@ function BirdDisplay({ birds }) {
                 length={currentBird.length_}
                 wingspan={currentBird.wingspan}
               />
-              <div id="description-wrapper">
-                <p>{currentBird.description}</p>
-                <p>{currentBird.state}</p>
-                <p>{currentBird.ability}</p>
-                <p>{currentBird.weight}</p>
-                <p>{currentBird.length_}</p>
-                <p>{currentBird.wingspan}</p>
-              </div>
             </div>
           </div>
           <div>

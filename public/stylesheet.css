@@ -28,6 +28,18 @@
     display: table;
   }
 
+.col-4 {
+    width: auto;
+    /* margin: 0px; */
+    padding: 0px;
+}
+
+.col-4 img {
+    /* margin: 0px; */
+    height: auto;
+    width: auto;
+}
+
 #root-wrapper {
     justify-content: center;
     align-items: center;
