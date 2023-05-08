@@ -15,7 +15,7 @@ function BirdDisplay({ birds }) {
     <React.Fragment>
       {currentBird ? (
         <React.Fragment>
-          <div id="current-bird">
+          <span id="current-bird">
             <div id="overflow-wrapper">
               <ImageWrapper
                 name={currentBird.name}
@@ -34,7 +34,7 @@ function BirdDisplay({ birds }) {
                 wingspan={currentBird.wingspan}
               />
             </div>
-          </div>
+          </span>
           <div>
             <button onClick={handleNextBird}>Next</button>
           </div>

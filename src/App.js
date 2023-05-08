@@ -20,7 +20,7 @@ function App() {
     };
 
     fetchBirds();
-  }, [birds]);
+  }, []);
 
   console.log('rendering app with birds: ', birds); 
   
