@@ -11,4 +11,6 @@
 
 .deets-card:hover {
     box-shadow: 2px 2px 5px rgb(0,0,0,0.3);
+    border-width: 1px;
+    border-style: dashed;
 }

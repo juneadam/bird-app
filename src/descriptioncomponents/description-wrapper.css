@@ -1,7 +1,9 @@
 /* CSS for description wrapper component */
 
 #description-wrapper {
-    border: 2px solid black;
+    /* border: 2px solid black; */
     padding: 0px 50px 50px 50px;
     width:fit-content;
+    justify-content: center;
+    background-color: transparent;
 }
