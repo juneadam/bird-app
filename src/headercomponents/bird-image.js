@@ -15,4 +15,4 @@ const BirdImage = (props) => {
   );
 };
 
-export default BirdImage
+export default BirdImage;

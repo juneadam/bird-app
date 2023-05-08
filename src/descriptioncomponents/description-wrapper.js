@@ -8,12 +8,13 @@ import DeetsWrapper from "./deets-wrapper";
 import "./description-wrapper.css";
 
 const DescriptionWrapper = (props) => {
-    let deetsObj = {
-        "length": props.length,
-        "weight": props.weight,
-        "wingspan": props.wingspan
-    }
-    console.log(deetsObj)
+  let deetsObj = {
+    "length": props.long,
+    "weight": props.weight,
+    "wingspan": props.wingspan
+  }
+
+  console.log(deetsObj)
 
   return (
     <div id="description-wrapper">

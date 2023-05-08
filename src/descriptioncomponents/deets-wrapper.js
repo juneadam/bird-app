@@ -13,7 +13,7 @@ const DeetsWrapper = (props) => {
     for (const [key, value] of Object.entries(deetsObj)) {
         console.log(`${key} : ${value}`)
         cardArray.push(<DeetsCard key={key} header={key} data={value} />)
-        }
+    }
 
     return (
         <div id="deets-wrapper">

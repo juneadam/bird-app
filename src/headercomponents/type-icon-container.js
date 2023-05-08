@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./type-icon-container.css";
 
 const TypeIconContainer = (props) => {
@@ -13,4 +13,4 @@ const TypeIconContainer = (props) => {
   );
 };
 
-export default TypeIconContainer
+export default TypeIconContainer;

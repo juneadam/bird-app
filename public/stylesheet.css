@@ -1,5 +1,12 @@
 * {
     box-sizing: border-box;
+}
+
+  body {
+    background-image: url("https://pbs.twimg.com/media/EC6sQO_UYAIt1Zz?format=png&name=medium");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
   }
 
   .col-1 {width: 8.33%;}
