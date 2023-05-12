@@ -1,5 +1,5 @@
 #overflow-wrapper {
-    overflow:scroll;
+    overflow: scroll;
     overflow-x: hidden;
     height: 400px;
     width: 381px;
@@ -7,21 +7,27 @@
 }
 
 #current-bird {
-    position: relative;
+    /* position: relative; */
+    z-index: 0;
+    box-shadow: 5px 5px 0px 10px black inset;
+    /* inset -5px -5px 10px #DAFDFD */
 }
 
 #bird-display-container {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center;    
 }
 
 .button-container {
     width: 200px;
     height: 200px;
-    position: relative;
-    background-color: transparent;
-    border: 0px;
+    top: 400px;
+    right: 400px;
+    position: absolute;
+    background-color: rgba(128, 128, 128, 0.75);
+    border: 1px black solid;
+    border-radius: 30%;
   }
   
 .previous-button, .next-button {
@@ -34,6 +40,18 @@
     background-image: url('https://static.thenounproject.com/png/2879647-200.png');
 }
 
+.previous-button {
+    left: 0;
+    background-position: 0 0;
+    border-radius: 43% 0% 0% 43%;
+}
+  
+.next-button {
+    right: 0;
+    background-position: 100% 0;
+    border-radius: 0% 43% 43% 0%;
+}
+
 .next-button:hover {
     box-shadow: 5px 0px 5px rgb(133, 133, 133);
 }
@@ -42,12 +60,3 @@
     box-shadow: -5px 0px 5px rgb(133, 133, 133);
 } 
   
-.previous-button {
-    left: 0;
-    background-position: 0 0;
-}
-  
-.next-button {
-    right: 0;
-    background-position: 100% 0;
-}

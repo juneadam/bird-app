@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import axios from 'axios';
 import BirdDisplay from './bird-display';
+import dpadButton from './outerboxcomponents/dpad-button';
 
 function App() {
   const [birds, setBirds] = useState([]);
@@ -33,6 +34,7 @@ function App() {
       ) : (
         <p>Loading...</p>
       )}
+      <dpadButton />
     </div>
   );
 }
