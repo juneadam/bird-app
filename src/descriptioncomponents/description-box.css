@@ -1,7 +1,6 @@
 /* styling for description of the bird */
 
 #description {
-    font-family: fantasy;
-    color: rgb(198, 169, 225);
+    color: rgb(0, 0, 0);
     text-align: center;
 }

@@ -2,8 +2,8 @@
 
 #deets-wrapper {
     display: flex;
-    /* background-color: rgba(127, 255, 212, 0.263); */
+    /* background-color: rgba(0, 0, 0, 0.263); */
     border-radius: 25%;
     text-align: center;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
