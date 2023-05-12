@@ -7,10 +7,8 @@
 }
 
 #current-bird {
-    /* position: relative; */
     z-index: 0;
     box-shadow: 5px 5px 0px 10px black inset;
-    /* inset -5px -5px 10px #DAFDFD */
 }
 
 #bird-display-container {
@@ -28,6 +26,7 @@
     background-color: rgba(128, 128, 128, 0.75);
     border: 1px black solid;
     border-radius: 30%;
+    z-index: 1;
   }
   
 .previous-button, .next-button {

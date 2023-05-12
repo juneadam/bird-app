@@ -6,7 +6,7 @@ A web application for bird lovers to read about all the state birds in an 8-bit 
 
 ## Features
 
-Use the dpad controller to peruse through the different state birds, with a few surpise bonue birds mixed in. 
+Use the dpad controller to peruse through the different state birds, with a few surpise bonus birds mixed in. 
 
 Users can go to the next bird, as well as the previous bird.
 

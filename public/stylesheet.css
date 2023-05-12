@@ -3,11 +3,14 @@ body {
     background-image: url("https://pbs.twimg.com/media/EC6sQO_UYAIt1Zz?format=png&name=medium");
     background-size: cover;
     background-repeat: no-repeat;
-    height: fit-content;
+    height: 100vh;
   }
 
-
-/* outer box stlying */
+@media (max-height: 920px) { 
+  body {
+    height: fit-content;
+  }
+}
 
 .col-1 {width: 8.33%;}
 .col-2 {width: 16.66%;}
@@ -24,7 +27,6 @@ body {
 
 [class*="col-"] {
     float: left;
-    /* border: 1px solid black; */
     background-color: transparent;
   }
 
@@ -36,7 +38,6 @@ body {
 
 .col-4 {
     width: auto;
-    /* margin: 0px; */
     padding: 0px;
 }
 
