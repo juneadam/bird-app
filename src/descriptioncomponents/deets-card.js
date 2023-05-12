@@ -4,11 +4,11 @@ import './deets-card.css';
 
 const DeetsCard = (props) => {
     return(
-        <div className="deets-card" id={"deets-card" + props.header}>
-            <div className='deets-header'>
+        <div className="deets-card" id={"deets-card-" + props.header}>
+            <div className="deets-header">
                 <b>{props.header}</b>
             </div>
-            <div className='deets-body'>
+            <div className="deets-body">
                 <i>{props.data}</i>
             </div>
         </div>

@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import axios from 'axios';
 import BirdDisplay from './bird-display';
+import dpadButton from './outerboxcomponents/dpad-button';
 
 function App() {
   const [birds, setBirds] = useState([]);
@@ -20,18 +21,20 @@ function App() {
     };
 
     fetchBirds();
-  }, [birds]);
+  }, []);
 
   console.log('rendering app with birds: ', birds); 
   
   return (
     <div>
-      <h1>   </h1>
+
+      {/* <h1>bee-bop-bird-dex</h1> */}
       {birds.length > 0 ? (
         <BirdDisplay birds={birds} />
       ) : (
         <p>Loading...</p>
       )}
+      <dpadButton />
     </div>
   );
 }

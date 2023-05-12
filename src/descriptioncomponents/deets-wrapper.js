@@ -1,7 +1,7 @@
-// React module for wrapper component containing cards for height, weight, and wingspan
+// React module for wrapper component that contains cards for height, weight, and wingspan cards for bird JSON data
 
 import './deets-wrapper.css';
-import DeetsCard from './deets-card';
+import DeetsCard from "./deets-card";
 
 const DeetsWrapper = (props) => {
 

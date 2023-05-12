@@ -1,9 +1,12 @@
 /* CSS for image-wrapper component */
 
 .image-wrapper {
-    text-align: center;
-    border: 2px solid black;
-    padding: 0px 50px 50px 50px;
-    width:fit-content;
-    font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+  /* border: 2px solid black; */
+  /* padding: 0px 50px 50px 50px; */
+  width: fit-content;
+  background-color: #dafdfd;
+  /* box-shadow: -2px 4px 5px #85a8ac inset; */
+  font-family: "Courier New", Courier, monospace;
+  background-color: #dafdfd;
 }

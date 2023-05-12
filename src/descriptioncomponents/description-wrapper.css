@@ -1,9 +1,9 @@
 /* styling for box around entire description component */
 
 #description-wrapper {
-    border: 2px solid black;
+    /* border: 2px solid black; */
     padding: 0px 50px 50px 50px;
     width:fit-content;
-    background-color:rgb(14, 130, 183)
+    justify-content: center;
+    background-color: transparent;
 }
-

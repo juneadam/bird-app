@@ -1,13 +1,7 @@
 /* CSS for bird-image React component */
 
- .bird-image {
+.bird-image {
     width: 50%;
-    height: 50%;
-    margin: 0 10px;  
-}
-  
-/* .bird-image {
-    width: 275px;
     height: auto;
     margin: 0 10px;  
-} */
+} 

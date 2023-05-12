@@ -1,0 +1,15 @@
+{
+    "frames": [
+        {
+            "dexFrameTopLeft": "placeholder",
+            "dexFrameTop": "./src/framecomponents/img/kalosDexTop.png",
+            "dexFrameTopRight": "placeholder",
+            "dexFrameLeft": "placeholder",
+            "dexFrameRight": "placeholder",
+            "dexFrameBtmLeft": "placeholder",
+            "dexFrameBtm": "./src/framecomponents/img/kalosDexBtm.png",
+            "dexFrameBtmRight": "placeholder",
+            "centralColor": "#8CA8A9"
+        }
+    ]
+}

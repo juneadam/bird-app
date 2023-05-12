@@ -5,8 +5,13 @@ import DescriptionWrapper from "./descriptioncomponents/description-wrapper";
 
 
 function BirdDisplay({ birds }) {
-  const [currentBirdIndex, setCurrentBirdIndex] = useState(0);
+  function getRndBird(birds) {
+    return Math.floor(Math.random() * (birds.length) );
+  }
+
+  const [currentBirdIndex, setCurrentBirdIndex] = useState(getRndBird(birds));
   const currentBird = birds[currentBirdIndex];
+
 
   const handleNextBird = () => {
     setCurrentBirdIndex((currentBirdIndex + 1) % birds.length);
