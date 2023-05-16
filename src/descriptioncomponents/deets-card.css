@@ -14,3 +14,13 @@
     border-width: 1px;
     border-style: dashed;
 }
+
+.deets-header {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.deets-body {
+    color:rgb(0, 0, 0);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}

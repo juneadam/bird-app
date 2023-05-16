@@ -72,5 +72,3 @@ function BirdDisplay({ birds }) {
 }
 
 export default BirdDisplay;
-
-// gelflsfsjklfs

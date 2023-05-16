@@ -1,4 +1,4 @@
-// import './dpad-button.css';
+import './dpad-button.css';
 
 // const dpadButton = (props) => {
 
