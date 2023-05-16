@@ -3,15 +3,13 @@ import "./bird-display.css";
 import ImageWrapper from "./headercomponents/image-wrapper";
 import DescriptionWrapper from "./descriptioncomponents/description-wrapper";
 
-
 function BirdDisplay({ birds }) {
   function getRndBird(birds) {
-    return Math.floor(Math.random() * (birds.length) );
+    return Math.floor(Math.random() * birds.length);
   }
 
   const [currentBirdIndex, setCurrentBirdIndex] = useState(getRndBird(birds));
   const currentBird = birds[currentBirdIndex];
-
 
   const handleNextBird = () => {
     setCurrentBirdIndex((currentBirdIndex + 1) % birds.length);
@@ -48,10 +46,20 @@ function BirdDisplay({ birds }) {
             </div>
             <div>
               <div className="button-container">
-                <button className="arrow-button previous-button" onClick={handlePreviousBird}>
-                </button>
-                <button className="arrow-button next-button" onClick={handleNextBird}>
-                </button>
+                <div className="dpad-text-wrapper">
+                  <p>Previous Bird</p>
+                </div>
+                <button
+                  className="arrow-button previous-button"
+                  onClick={handlePreviousBird}
+                ></button>
+                <button
+                  className="arrow-button next-button"
+                  onClick={handleNextBird}
+                ></button>
+                <div className="dpad-text-wrapper">
+                  <p>Next Bird</p>
+                </div>
               </div>
             </div>
           </React.Fragment>
