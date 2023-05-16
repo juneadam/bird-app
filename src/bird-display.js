@@ -44,11 +44,11 @@ function BirdDisplay({ birds }) {
                 />
               </div>
             </div>
-            <div>
+            <div className="button-wrapper">
               <div className="button-container">
-                <div className="dpad-text-wrapper">
+                {/* <div className="dpad-text-wrapper">
                   <p>Previous Bird</p>
-                </div>
+                </div> */}
                 <button
                   className="arrow-button previous-button"
                   onClick={handlePreviousBird}
@@ -57,9 +57,9 @@ function BirdDisplay({ birds }) {
                   className="arrow-button next-button"
                   onClick={handleNextBird}
                 ></button>
-                <div className="dpad-text-wrapper">
+                {/* <div className="dpad-text-wrapper">
                   <p>Next Bird</p>
-                </div>
+                </div> */}
               </div>
             </div>
           </React.Fragment>
