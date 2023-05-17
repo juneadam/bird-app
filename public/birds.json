@@ -11,7 +11,7 @@
             "ability_text": "boosts evasiveness if it is hailing or snowing",
             "description": "this is articunos description",
             "image": "https://www.pngkey.com/png/full/230-2302933_articuno-articuno-transparent.png",
-            "call": "sound.mp3",
+            "call": "https://play.pokemonshowdown.com/audio/cries/articuno.ogg",
             "long": "5'7''",
             "weight": "122 lbs",
             "wingspan": "5.3 meters"

@@ -4,13 +4,13 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
+    width: auto;
+    background-attachment:fixed;
+    overflow: auto;
   }
 
-@media (max-height: 920px) { 
-  body {
-    height: fit-content;
-  }
-}
+
+/* outer box styling */
 
 .col-1 {width: 8.33%;}
 .col-2 {width: 16.66%;}

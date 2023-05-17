@@ -7,10 +7,9 @@ const BirdCall = (props) => {
 
     return (
         <div id="bird-call">
-            <audio controls autoPlay muted>
-            <source src={call} type="audio/ogg" />
-            <source src="horse.mp3" type="audio/mpeg" />
-            Your browser does not support the audio element.
+            <audio controls>
+            <source src={call} />
+            
             </audio>
         </div>
     )
