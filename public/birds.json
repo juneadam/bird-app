@@ -3,6 +3,7 @@
         {
             "name": "Articuno",
             "state": "Kanto",
+            "state_image": "https://www.pngkey.com/png/full/230-2302933_articuno-articuno-transparent.png",
             "latin_name": "Articuno",
             "bird_type1": "https://pixelmonmod.com/w/images/0/0d/FlyingType.png",
             "bird_type2": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Pok%C3%A9mon_Ice_Type_Icon.svg/180px-Pok%C3%A9mon_Ice_Type_Icon.svg.png",
@@ -18,6 +19,7 @@
         {
             "name": "American Robin",
             "state": "CT",
+            "state_image": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.allaboutbirds.org%2Fguide%2FAmerican_Robin%2Fmaps-range&psig=AOvVaw1xLIFvlAdf42Mnc5mziorH&ust=1684341388345000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCLDThuKi-v4CFQAAAAAdAAAAABAE.png",
             "latin_name": "Turdus Migratorius",
             "bird_type1": "https://pixelmonmod.com/w/images/0/0d/FlyingType.png",
             "bird_type2": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Pok%C3%A9mon_Normal_Type_Icon.svg/180px-Pok%C3%A9mon_Normal_Type_Icon.svg.png",
@@ -33,6 +35,7 @@
         {
             "name": "Greater Roadrunner",
             "state": "NM",
+            "state_image": "  ",
             "latin_name": "Geococcyx Californicus",
             "bird_type1": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Pok%C3%A9mon_Ground_Type_Icon.svg/180px-Pok%C3%A9mon_Ground_Type_Icon.svg.png",
             "bird_type2": "https://pixelmonmod.com/w/images/0/0d/FlyingType.png",
@@ -48,6 +51,7 @@
         {
             "name": "Quail",
             "state": "CA and WA",
+            "state_image": "",
             "latin_name": "Callipepla Californica",
             "bird_type1": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Pok%C3%A9mon_Fairy_Type_Icon.svg/180px-Pok%C3%A9mon_Fairy_Type_Icon.svg.png",
             "bird_type2": "https://pixelmonmod.com/w/images/0/0d/FlyingType.png",
@@ -63,6 +67,7 @@
         {
             "name": "Wild Turkey",
             "state": "NE & SE MA",
+            "state_image": "",
             "latin_name": "Meleagris Gallopavo",
             "bird_type1": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Pok%C3%A9mon_Normal_Type_Icon.svg/180px-Pok%C3%A9mon_Normal_Type_Icon.svg.png",
             "bird_type2": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Pok%C3%A9mon_Fighting_Type_Icon.svg/180px-Pok%C3%A9mon_Fighting_Type_Icon.svg.png",
@@ -78,6 +83,7 @@
         {
             "name": "Cardinal",
             "state": "E of Rocky Mountains",
+            "state_image": "",
             "latin_name": "Cardinalis Cardinalis",
             "bird_type1": "https://pixelmonmod.com/w/images/0/0d/FlyingType.png",
             "bird_type2": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Pok%C3%A9mon_Ice_Type_Icon.svg/180px-Pok%C3%A9mon_Ice_Type_Icon.svg.png",
