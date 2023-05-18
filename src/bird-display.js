@@ -36,6 +36,7 @@ function BirdDisplay({ birds }) {
                 <DescriptionWrapper
                   description={currentBird.description}
                   state={currentBird.state}
+                  state_image={currentBird.state_image}
                   ability_name={currentBird.ability_name}
                   ability_text={currentBird.ability_text}
                   weight={currentBird.weight}

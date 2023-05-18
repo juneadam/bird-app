@@ -20,7 +20,7 @@ const DescriptionWrapper = (props) => {
     <div id="description-wrapper">
       <DescriptionBox description={props.description} />
       <Ability ability_name={props.ability_name} ability_text={props.ability_text} />
-      <State state={props.state} />
+      <State state={props.state} state_image={props.state_image} />
       <DeetsWrapper deets={deetsObj} />
     </div>
   );

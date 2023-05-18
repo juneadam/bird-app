@@ -1,3 +1,15 @@
 #state {
     color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
 } 
+
+.state_image {
+    width: 80%;
+    height: auto;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+}

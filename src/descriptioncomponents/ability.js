@@ -8,14 +8,14 @@ const Ability = (props) => {
 
     return (
     <React.Fragment>
-        <div id="ability-title">
-        Ability: <strong className="ability-title">{props.ability_name}</strong>
+        <div id="ability-title" className="ability-title">
+            <span>Ability:</span><strong>{props.ability_name}</strong>
         </div>
         <div id="ability-text">
             <i className="ability-description">{props.ability_text}</i>
         </div>
     </React.Fragment>
-    )
-}
+    );
+};
 
 export default Ability;
