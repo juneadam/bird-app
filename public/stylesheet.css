@@ -5,8 +5,8 @@ body {
     background-repeat: no-repeat;
     height: 100vh;
     width: auto;
+    min-width: 443px;
     background-attachment:fixed;
-    overflow: auto;
   }
 
 
