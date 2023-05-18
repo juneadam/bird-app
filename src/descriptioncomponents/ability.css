@@ -1,7 +1,18 @@
 .ability-title {
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#ability-title span {
+  margin-right: 5px; /* Adjust the margin value as needed */
 }
 
 .ability-description {
-  color: rgb(0, 0, 0);
+  color: rgb(72, 76, 93);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

@@ -5,6 +5,7 @@
     padding: 0px 50px 50px 50px;
     width:fit-content;
     justify-content: center;
+    align-items: center;
     background-color: transparent;
     /* display: flex; */
 }
