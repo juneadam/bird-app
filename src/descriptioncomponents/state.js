@@ -11,7 +11,7 @@ const State = (props) => {
         <div id="state">
             Region: <strong className="state">{props.state}</strong>
         </div>
-        <div id="state_image">
+        <div id="state_image_wrapper">
             <img
               src={state_image}
               alt={"the region"}
