@@ -9,9 +9,6 @@ body {
     overflow: auto;
   }
 
-
-/* outer box styling */
-
 .col-1 {width: 8.33%;}
 .col-2 {width: 16.66%;}
 .col-3 {width: 25%;}
@@ -48,4 +45,15 @@ body {
     margin: 0px;
     width:50%;
     background-color: transparent;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.row {
+  flex: 1 0 auto;
+  display: flex;
+  justify-content: center;
 }
