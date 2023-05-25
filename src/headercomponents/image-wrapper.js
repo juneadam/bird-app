@@ -18,7 +18,7 @@ const ImageWrapper = (props) => {
         <div className="image-wrapper">
         <BirdName name={name} />
         <BirdImage image={image} name={image} />
-        <BirdCall call={call} />
+        <BirdCall name={name} call={call} />
         <TypeIconContainer bird_type1={bird_type1} bird_type2={bird_type2}/>
       </div>
     )
