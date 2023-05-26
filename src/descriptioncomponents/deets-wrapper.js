@@ -6,12 +6,10 @@ import DeetsCard from "./deets-card";
 const DeetsWrapper = (props) => {
 
     let deetsObj = props.deets;
-    console.log(`this is the deets object ${props.deets}`);
 
     let cardArray = [];
 
     for (const [key, value] of Object.entries(deetsObj)) {
-        console.log(`${key} : ${value}`)
         cardArray.push(<DeetsCard key={key} header={key} data={value} />)
     }
 

@@ -1,5 +1,37 @@
 /* CSS for bird-image React component */
 
+#img-name-wrapper {
+    position: relative;
+    float: left;
+    margin-right: 10px;
+}
+
+#img-name-wrapper:hover {
+    cursor: pointer;
+}
+
+#bird-name-hover {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: black;
+    color: white;
+    margin-bottom: 5px;
+    font-family: sans-serif;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: visibility 0s, opacity 0.5s linear; 
+    transition: visibility 0s, opacity 0.5s linear;
+}
+
+#bird-name-hover:hover {
+    background-color: white;
+    width: 150px;
+    padding: 8px 15px;
+    visibility: visible;
+    opacity: 0.7; 
+}
+
 .bird-image {
     width: 50%;
     height: auto;
