@@ -35,8 +35,8 @@
 
 @media (max-width: 768px) {
   .button-container {
-    left: -100px;
     top: 230px;
+    left: -100px;
     position: absolute;
   }
 }

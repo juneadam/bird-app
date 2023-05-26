@@ -9,7 +9,6 @@ const BirdCall = (props) => {
         <div id="bird-call">
             <audio key={props.name} controls>
             <source src={props.call} />
-            
             </audio>
         </div>
     )
