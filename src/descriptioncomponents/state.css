@@ -4,12 +4,14 @@
     justify-content: center;
     align-items: center;
     padding: 5px;
+    margin-top: 10px;
 } 
 
 #state_image_wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 10px;
 }
 
 .state_image {

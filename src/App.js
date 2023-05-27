@@ -10,7 +10,7 @@ function App() {
   useEffect(() => {
     const fetchBirds = async () => {
       try {
-        const response = await axios.get('/birds.json');
+        const response = await axios.get('/BIRDDEX.json');
         setBirds(response.data.data);
 
       } catch (error) {
