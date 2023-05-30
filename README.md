@@ -43,4 +43,4 @@ The bird data in this app is for demonstration purposes only. The images, descri
 
 ![picture of bird-dex main page](https://i.imgur.com/kI3Z449.png)
 
-![picture of bird-dex main page scrolled down](https://imgur.com/IiwVi9t)
+![picture of bird-dex main page scrolled down](https://i.imgur.com/DaljWlF.png)
