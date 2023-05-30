@@ -19,3 +19,7 @@ This app is built using React, JavaScript, and Node.js. The focus of this app wa
 Using hooks, effects, and state, the backend functionality is re-usable and flexible. 
 
 Styling was attached to each component separately to provide ultimate organization and easy styling manipulation.
+
+![picture of bird-dex main page](https://imgur.com/a/ffXFkma)
+
+![picture of bird-dex main page scrolled down](https://imgur.com/IiwVi9t)
