@@ -14,8 +14,6 @@ const DescriptionWrapper = (props) => {
     "wingspan": props.wingspan
   }
 
-  console.log(deetsObj)
-
   return (
     <div id="description-wrapper">
       <DescriptionBox description={props.description} />

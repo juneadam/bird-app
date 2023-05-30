@@ -1,7 +1,8 @@
 import React, {useEffect, useState} from 'react';
 import axios from 'axios';
 import BirdDisplay from './bird-display';
-import dpadButton from './outerboxcomponents/dpad-button';
+
+
 
 function App() {
   const [birds, setBirds] = useState([]);
@@ -9,11 +10,8 @@ function App() {
   useEffect(() => {
     const fetchBirds = async () => {
       try {
-        const response = await axios.get('/birds.json');
+        const response = await axios.get('/BIRDDEX.json');
         setBirds(response.data.data);
-
-        console.log('Response data: ', response.data);
-        console.log('birds: ', birds);
 
       } catch (error) {
         console.error('Error fetching birds:', error);
@@ -22,19 +20,14 @@ function App() {
 
     fetchBirds();
   }, []);
-
-  console.log('rendering app with birds: ', birds); 
   
   return (
     <div>
-
-      {/* <h1>bee-bop-bird-dex</h1> */}
       {birds.length > 0 ? (
         <BirdDisplay birds={birds} />
       ) : (
         <p>Loading...</p>
       )}
-      <dpadButton />
     </div>
   );
 }
