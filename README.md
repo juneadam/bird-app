@@ -41,6 +41,6 @@ Once the app is running, you can view different bird species by using the dpad n
 
 The bird data in this app is for demonstration purposes only. The images, descriptions, and other details are sourced from various websites. This app is created for educational purposes, and for fun, and does not have any affiliation with the sources of the bird data.
 
-![picture of bird-dex main page](https://imgur.com/a/ffXFkma)
+![picture of bird-dex main page](image https://imgur.com/a/ffXFkma)
 
-![picture of bird-dex main page scrolled down](https://imgur.com/IiwVi9t)
+![picture of bird-dex main page scrolled down](image https://imgur.com/IiwVi9t)
