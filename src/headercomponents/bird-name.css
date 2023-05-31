@@ -1,8 +1,8 @@
 /* CSS for bird-name React component */
 
 .bird-name {
-    color:rgb(39, 81, 116);
+    color:rgb(133, 5, 52);
     text-shadow: slategrey 1px 1px 1px;
-    font-weight: 600;
-    font-family: "Lora", serif;
+    font-weight: 500;
+    font-family: 'Space Mono', monospace;
 }
