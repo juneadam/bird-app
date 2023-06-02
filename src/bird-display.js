@@ -4,12 +4,18 @@ import ImageWrapper from "./headercomponents/image-wrapper";
 import DescriptionWrapper from "./descriptioncomponents/description-wrapper";
 
 function BirdDisplay({ birds }) {
-  function getRndBird(birds) {
-    return Math.floor(Math.random() * birds.length);
-  }
+  // function getRndBird(birds) {
+  //   return Math.floor(Math.random() * birds.length);
+  // }
 
-  const [currentBirdIndex, setCurrentBirdIndex] = useState(getRndBird(birds));
+  // const [currentBirdIndex, setCurrentBirdIndex] = useState(getRndBird(birds));
+  // const currentBird = birds[currentBirdIndex];
+
+  // new code
+  const [currentBirdIndex, setCurrentBirdIndex] = useState(0);
   const currentBird = birds[currentBirdIndex];
+  
+  // end new code
 
   const handleNextBird = () => {
     setCurrentBirdIndex((currentBirdIndex + 1) % birds.length);
