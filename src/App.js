@@ -10,6 +10,14 @@ function App() {
   // new state variable to store filtered birds based on search query
   const [searchQuery, setSearchQuery] = useState("");
   const [filteredBirds, setFilteredBirds] = useState([]);
+
+  // function getRndBird(birds) {
+  //   return Math.floor(Math.random() * birds.length);
+  // }
+
+  // const [currentBirdIndex, setCurrentBirdIndex] = useState(getRndBird(birds));
+  // const currentBird = filteredBirds[currentBirdIndex];
+
   const [currentBirdIndex, setCurrentBirdIndex] = useState(0);
 
 
@@ -19,11 +27,12 @@ function App() {
   
     if (query === '') {
       setFilteredBirds(birds);
+      // setCurrentBirdIndex(getRndBird(birds));
     } else {
-      const filteredBirds = birds.filter((bird) =>
+      const newFilteredBirds = birds.filter((bird) =>
         bird.name.toLowerCase().includes(query.toLowerCase())
       );
-      setFilteredBirds(filteredBirds);
+      setFilteredBirds(newFilteredBirds);
     }
     setCurrentBirdIndex(0);
   };
@@ -34,8 +43,10 @@ function App() {
     const fetchBirds = async () => {
       try {
         const response = await axios.get('/BIRDDEX.json');
-        setBirds(response.data.data);
-        setFilteredBirds(response.data.data); //new line of code
+        const birdsFetched = response.data.data
+        const shuffledBirds = [...birdsFetched].sort(() => Math.random() - 0.5)
+        setBirds(shuffledBirds);
+        setFilteredBirds(shuffledBirds); //new line of code
       } catch (error) {
         console.error('Error fetching birds:', error);
       }

@@ -4,12 +4,6 @@ import ImageWrapper from "./headercomponents/image-wrapper";
 import DescriptionWrapper from "./descriptioncomponents/description-wrapper";
 
 function BirdDisplay({ birds }) {
-  // function getRndBird(birds) {
-  //   return Math.floor(Math.random() * birds.length);
-  // }
-
-  // const [currentBirdIndex, setCurrentBirdIndex] = useState(getRndBird(birds));
-  // const currentBird = birds[currentBirdIndex];
 
   const [currentBirdIndex, setCurrentBirdIndex] = useState(0);
   const currentBird = birds[currentBirdIndex];
