@@ -10,6 +10,7 @@ function BirdDisplay({ birds }) {
 
   // const [currentBirdIndex, setCurrentBirdIndex] = useState(getRndBird(birds));
   // const currentBird = birds[currentBirdIndex];
+
   const [currentBirdIndex, setCurrentBirdIndex] = useState(0);
   const currentBird = birds[currentBirdIndex];
   
