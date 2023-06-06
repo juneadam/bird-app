@@ -1,23 +1,12 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import "./bird-display.css";
 import ImageWrapper from "./headercomponents/image-wrapper";
 import DescriptionWrapper from "./descriptioncomponents/description-wrapper";
 
-function BirdDisplay({ birds,filteredBirds,searchQuery }) {
-  function getRndBird(birds) {
-    return Math.floor(Math.random() * birds.length);
-  }
+function BirdDisplay({ birds }) {
 
-  const [currentBirdIndex, setCurrentBirdIndex] = useState(getRndBird(birds));
-  // const currentBird = filteredBirds[currentBirdIndex];
+  const [currentBirdIndex, setCurrentBirdIndex] = useState(0);
   const currentBird = birds[currentBirdIndex];
-
-  // useEffect(() => {
-  //   const updateBirdIndex=() => {
-  //     setCurrentBirdIndex(0)
-  //   } 
-  //   updateBirdIndex();
-  // }, [searchQuery])
 
   const handleNextBird = () => {
     setCurrentBirdIndex((currentBirdIndex + 1) % birds.length);
@@ -80,3 +69,16 @@ export default BirdDisplay;
 
   // const [currentBirdIndex, setCurrentBirdIndex] = useState(0);
   // const currentBird = birds[currentBirdIndex];
+
+    // useEffect(() => {
+  //   const updateBirdIndex=() => {
+  //     setCurrentBirdIndex(0)
+  //   } 
+  //   updateBirdIndex();
+  // }, [searchQuery])
+
+  // function getRndBird(birds) {
+  //   return Math.floor(Math.random() * birds.length);
+  // }
+
+    // const currentBird = filteredBirds[currentBirdIndex];

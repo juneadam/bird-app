@@ -28,8 +28,10 @@ function App() {
     const fetchBirds = async () => {
       try {
         const response = await axios.get('/BIRDDEX.json');
-        setBirds(response.data.data);
-        setFilteredBirds(response.data.data); //new line of code
+        const birdsFetched = response.data.data
+        const shuffledBirds = [...birdsFetched].sort(()=> Math.random()-0.5)
+        setBirds(shuffledBirds);
+        setFilteredBirds(shuffledBirds);
       } catch (error) {
         console.error('Error fetching birds:', error);
       }
@@ -48,9 +50,7 @@ return (
     />
     {filteredBirds.length > 0 ? (
       <BirdDisplay
-        searchQuery={searchQuery}
-        filteredBirds={filteredBirds}
-        birds={birds}
+        birds={filteredBirds}
         currentBirdIndex={currentBirdIndex}
         setCurrentBirdIndex={setCurrentBirdIndex}
       />
