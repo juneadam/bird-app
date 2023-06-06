@@ -4,16 +4,12 @@ import ImageWrapper from "./headercomponents/image-wrapper";
 import DescriptionWrapper from "./descriptioncomponents/description-wrapper";
 
 function BirdDisplay({ birds }) {
-  // function getRndBird(birds) {
-  //   return Math.floor(Math.random() * birds.length);
-  // }
+  function getRndBird(birds) {
+    return Math.floor(Math.random() * birds.length);
+  }
 
-  // const [currentBirdIndex, setCurrentBirdIndex] = useState(getRndBird(birds));
-  // const currentBird = birds[currentBirdIndex];
-
-  const [currentBirdIndex, setCurrentBirdIndex] = useState(0);
+  const [currentBirdIndex, setCurrentBirdIndex] = useState(getRndBird(birds));
   const currentBird = birds[currentBirdIndex];
-  
 
   const handleNextBird = () => {
     setCurrentBirdIndex((currentBirdIndex + 1) % birds.length);
@@ -23,6 +19,8 @@ function BirdDisplay({ birds }) {
     setCurrentBirdIndex((currentBirdIndex - 1 + birds.length) % birds.length);
   };
 
+
+  
   return (
     <React.Fragment>
       <div id="bird-display-container">
@@ -71,3 +69,8 @@ function BirdDisplay({ birds }) {
 }
 
 export default BirdDisplay;
+
+
+
+  // const [currentBirdIndex, setCurrentBirdIndex] = useState(0);
+  // const currentBird = birds[currentBirdIndex];

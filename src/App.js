@@ -6,12 +6,9 @@ import BirdDisplay from './bird-display';
 
 function App() {
   const [birds, setBirds] = useState([]);
-  // new code
-  // new state variable to store filtered birds based on search query
   const [searchQuery, setSearchQuery] = useState("");
   const [filteredBirds, setFilteredBirds] = useState([]);
   const [currentBirdIndex, setCurrentBirdIndex] = useState(0);
-
 
   const handleSearchInputChange = (event) => {
     const query = event.target.value;
@@ -28,8 +25,6 @@ function App() {
     setCurrentBirdIndex(0);
   };
 
-  // end new code
-
   useEffect(() => {
     const fetchBirds = async () => {
       try {
@@ -43,17 +38,6 @@ function App() {
 
     fetchBirds();
   }, []);
-  
-//   return (
-//     <div>
-//       {birds.length > 0 ? (
-//         <BirdDisplay birds={birds} />
-//       ) : (
-//         <p>Loading...</p>
-//       )}
-//     </div>
-//   );
-// }
 
 return (
   <div>
@@ -61,7 +45,7 @@ return (
       type="text"
       value={searchQuery}
       onChange={handleSearchInputChange}
-      placeholder="Search bird name..."
+      placeholder="Typebird name..."
     />
     {filteredBirds.length > 0 ? (
       <BirdDisplay
@@ -77,3 +61,15 @@ return (
 }
 
 export default App;
+
+  
+//   return (
+//     <div>
+//       {birds.length > 0 ? (
+//         <BirdDisplay birds={birds} />
+//       ) : (
+//         <p>Loading...</p>
+//       )}
+//     </div>
+//   );
+// }
