@@ -29,7 +29,7 @@ function App() {
       try {
         const response = await axios.get('/BIRDDEX.json');
         const birdsFetched = response.data.data
-        const shuffledBirds = [...birdsFetched].sort(()=> Math.random()-0.5)
+        const shuffledBirds = [...birdsFetched].sort(()=> Math.random() - 0.5)
         setBirds(shuffledBirds);
         setFilteredBirds(shuffledBirds);
       } catch (error) {
@@ -42,28 +42,32 @@ function App() {
 
 return (
   <div>
-    <input
+     <input
       type="text"
       value={searchQuery}
       onChange={handleSearchInputChange}
       placeholder="Type bird name..."
     />
-    {filteredBirds.length > 0 ? (
+     {filteredBirds.length > 0 ? (
       <BirdDisplay
         birds={filteredBirds}
         currentBirdIndex={currentBirdIndex}
         setCurrentBirdIndex={setCurrentBirdIndex}
+        setSearchQuery={setSearchQuery}
       />
     ) : (
       <p>No matching birds found.</p>
     )}
-  </div>
-);
+   </div>
+ );
 }
 
 export default App;
 
   
+
+
+// old code:
 //   return (
 //     <div>
 //       {birds.length > 0 ? (

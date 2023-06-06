@@ -1,20 +1,23 @@
-import React, { useState } from "react";
+// import React, { useState } from "react";
+import React from "react";
 import "./bird-display.css";
 import ImageWrapper from "./headercomponents/image-wrapper";
 import DescriptionWrapper from "./descriptioncomponents/description-wrapper";
 
-function BirdDisplay({ birds }) {
-
-  const [currentBirdIndex, setCurrentBirdIndex] = useState(0);
+function BirdDisplay({ birds, currentBirdIndex, setCurrentBirdIndex }) {
   const currentBird = birds[currentBirdIndex];
 
   const handleNextBird = () => {
-    setCurrentBirdIndex((currentBirdIndex + 1) % birds.length);
+    setCurrentBirdIndex((currentIndex) => (currentIndex + 1) % birds.length);
   };
 
   const handlePreviousBird = () => {
-    setCurrentBirdIndex((currentBirdIndex - 1 + birds.length) % birds.length);
+    setCurrentBirdIndex((currentIndex) => (currentIndex - 1 + birds.length) % birds.length);
   };
+  
+// React will automatically pass the current state value (in this case, the current index) 
+// as the first parameter to the arrow function. 
+// In this case, it will pass the current value of currentBirdIndex as currentIndex.
 
   return (
     <React.Fragment>
@@ -65,6 +68,20 @@ function BirdDisplay({ birds }) {
 
 export default BirdDisplay;
 
+
+
+
+// old code:
+
+//   const [currentBirdIndex, setCurrentBirdIndex] = useState(0);
+
+//   const handleNextBird = () => {
+//     setCurrentBirdIndex((currentBirdIndex + 1) % birds.length);
+//   };
+
+//   const handlePreviousBird = () => {
+//     setCurrentBirdIndex((currentBirdIndex - 1 + birds.length) % birds.length);
+//   };
 
 
   // const [currentBirdIndex, setCurrentBirdIndex] = useState(0);
