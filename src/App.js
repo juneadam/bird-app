@@ -3,11 +3,10 @@ import axios from 'axios';
 import BirdDisplay from './bird-display';
 
 
-
 function App() {
   const [birds, setBirds] = useState([]);
   const [searchQuery, setSearchQuery] = useState("");
-  const [filteredBirds, setFilteredBirds] = useState([]);
+  const [filteredBirds, setFilteredBirds] = useState(birds);
   const [currentBirdIndex, setCurrentBirdIndex] = useState(0);
 
   const handleSearchInputChange = (event) => {
@@ -17,10 +16,10 @@ function App() {
     if (query === '') {
       setFilteredBirds(birds);
     } else {
-      const filteredBirds = birds.filter((bird) =>
+      const newfilteredBirds = birds.filter((bird) =>
         bird.name.toLowerCase().includes(query.toLowerCase())
       );
-      setFilteredBirds(filteredBirds);
+      setFilteredBirds(newfilteredBirds);
     }
     setCurrentBirdIndex(0);
   };
@@ -45,11 +44,13 @@ return (
       type="text"
       value={searchQuery}
       onChange={handleSearchInputChange}
-      placeholder="Typebird name..."
+      placeholder="Type bird name..."
     />
     {filteredBirds.length > 0 ? (
       <BirdDisplay
-        birds={filteredBirds}
+        searchQuery={searchQuery}
+        filteredBirds={filteredBirds}
+        birds={birds}
         currentBirdIndex={currentBirdIndex}
         setCurrentBirdIndex={setCurrentBirdIndex}
       />
