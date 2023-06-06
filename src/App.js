@@ -15,6 +15,7 @@ function App() {
   
     if (query === '') {
       setFilteredBirds(birds);
+      // setCurrentBirdIndex(getRndBird(birds));
     } else {
       const newfilteredBirds = birds.filter((bird) =>
         bird.name.toLowerCase().includes(query.toLowerCase())
@@ -78,3 +79,8 @@ export default App;
 //     </div>
 //   );
 // }
+
+
+
+// merged deletes:
+// const [filteredBirds, setFilteredBirds] = useState([]);

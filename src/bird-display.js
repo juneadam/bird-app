@@ -19,6 +19,9 @@ function BirdDisplay({ birds, currentBirdIndex, setCurrentBirdIndex }) {
 // as the first parameter to the arrow function. 
 // In this case, it will pass the current value of currentBirdIndex as currentIndex.
 
+
+
+
   return (
     <React.Fragment>
       <div id="bird-display-container">
@@ -72,6 +75,11 @@ export default BirdDisplay;
 
 
 // old code:
+
+// function BirdDisplay({ birds }) {
+
+  // const [currentBirdIndex, setCurrentBirdIndex] = useState(0);
+
 
 //   const [currentBirdIndex, setCurrentBirdIndex] = useState(0);
 
