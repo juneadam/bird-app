@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import axios from 'axios';
+import './App.css'
 import BirdDisplay from './bird-display';
 
 
@@ -45,6 +46,7 @@ return (
   <div>
      <input
       type="text"
+      className='searchBar'
       value={searchQuery}
       onChange={handleSearchInputChange}
       placeholder="Type bird name..."
