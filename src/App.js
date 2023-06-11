@@ -4,7 +4,7 @@ import './App.css'
 import BirdDisplay from './bird-display';
 
 
-function App() {
+function useBirds() {
   const [birds, setBirds] = useState([]);
   const [searchQuery, setSearchQuery] = useState("");
   const [filteredBirds, setFilteredBirds] = useState(birds);
@@ -18,10 +18,10 @@ function App() {
       setFilteredBirds(birds);
       // setCurrentBirdIndex(getRndBird(birds));
     } else {
-      const newfilteredBirds = birds.filter((bird) =>
+      const newFilteredBirds = birds.filter((bird) =>
         bird.name.toLowerCase().includes(query.toLowerCase())
       );
-      setFilteredBirds(newfilteredBirds);
+      setFilteredBirds(newFilteredBirds);
     }
     setCurrentBirdIndex(0);
   };
@@ -32,7 +32,7 @@ function App() {
         const response = await axios.get('/BIRDDEX.json');
         const birdsFetched = response.data.data
         const shuffledBirds = [...birdsFetched].sort(()=> Math.random() - 0.5)
-        setBirds(shuffledBirds);
+        setBirds(shuffledBirds); // factor out?, not currently being used
         setFilteredBirds(shuffledBirds);
       } catch (error) {
         console.error('Error fetching birds:', error);
@@ -41,6 +41,28 @@ function App() {
 
     fetchBirds();
   }, []);
+
+  return {
+    filteredBirds,
+    currentBirdIndex,
+    setCurrentBirdIndex,
+    searchQuery,
+    setSearchQuery,
+    handleSearchInputChange,
+  };
+}
+
+// separation of concerns
+
+function App() {
+  const {
+    filteredBirds,
+    currentBirdIndex,
+    setCurrentBirdIndex,
+    searchQuery,
+    setSearchQuery,
+    handleSearchInputChange,
+  } = useBirds();
 
 return (
   <div>
@@ -66,23 +88,3 @@ return (
 }
 
 export default App;
-
-  
-
-
-// old code:
-//   return (
-//     <div>
-//       {birds.length > 0 ? (
-//         <BirdDisplay birds={birds} />
-//       ) : (
-//         <p>Loading...</p>
-//       )}
-//     </div>
-//   );
-// }
-
-
-
-// merged deletes:
-// const [filteredBirds, setFilteredBirds] = useState([]);

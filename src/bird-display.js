@@ -20,7 +20,10 @@ function BirdDisplay({ birds, currentBirdIndex, setCurrentBirdIndex }) {
 // In this case, it will pass the current value of currentBirdIndex as currentIndex.
 
 
+// visual feedback on the D-Pad when the birds list is filtered from the search, other 
+// visual feedback
 
+// look up how to build accessible carousel - aria-role
 
   return (
     <React.Fragment>
